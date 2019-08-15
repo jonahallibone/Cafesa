@@ -1,0 +1,37 @@
+.button {
+    padding: .75rem 1.5rem;
+    background: rgba(255, 135, 98, 0.15);
+    color: #FF8762;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .245s ease all;
+    display: inline-flex;
+    font-size: .88rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__link,
+.button__link:hover {
+    color: #FF8762;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: rgba(255, 135, 98, 0.25);
+}
+
+.button:active {
+    background: rgba(255, 135, 98, 0.35);
+}
+
+.facebook {
+    background: #EFF4FF;
+    color: #679BFF;
+}
+
+.facebook:hover {
+    background: #CFDFFF;
+}
+

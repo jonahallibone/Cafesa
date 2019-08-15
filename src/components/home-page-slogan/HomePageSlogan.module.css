@@ -1,0 +1,27 @@
+.slogan_container {
+    width: 500px;
+    text-align: center;
+}
+
+.slogan_line__1,
+.slogan_line__2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.slogan_line__2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.slogan_line__2 .slogan_line__word {
+    display: block;
+    text-align: center;
+    left: 50%;
+    opacity: 1;
+}
+
+.slogan_line__3 {
+    margin: 2rem;
+}

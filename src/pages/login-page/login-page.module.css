@@ -1,0 +1,37 @@
+.login_page {
+    display: flex;
+}
+
+.login_page__background {
+    background-image: url(/images/Frame.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #679BFF;
+}
+
+.login_page__height {
+    height: calc(100vh - 87px);
+    margin-top: 87px;
+}
+
+.login_page__form {
+    width: 400px;
+    margin-top: 4rem;
+}
+
+.login_page__form_error {
+    font-size: .78rem;
+    color: #F00;
+    text-transform: uppercase;
+}
+
+.button_group {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.button_group > div {
+    margin-right: 1rem;
+}

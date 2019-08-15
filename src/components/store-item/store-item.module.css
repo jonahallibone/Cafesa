@@ -1,0 +1,28 @@
+.store_item {
+    flex: 0 0 50%;
+}
+
+.store_item__header {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.store_item__header_image {
+    display: block;
+    width: 100%;
+}
+
+.store_item__body {
+    
+}
+
+.store_item__icon_row > div {
+    margin-right: 1rem;
+}
+
+.store_item__name {
+    display: block;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1rem 0;
+}

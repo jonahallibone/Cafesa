@@ -1,0 +1,14 @@
+.icon {
+    display: inline-flex;
+    height: 35px;
+    width: 35px;
+    margin: 0 0;
+    background: rgba(255, 135, 98, 0.15);
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon > svg {
+    stroke: #FF8762;
+}

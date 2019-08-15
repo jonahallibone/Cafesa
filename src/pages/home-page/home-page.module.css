@@ -1,0 +1,13 @@
+.homepage {
+
+}
+
+.banner {
+    height: 85vh;
+    min-height: 600px;
+    background: #EFEFEF;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
