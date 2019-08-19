@@ -19,6 +19,7 @@ export const userReducer = createReducer(initialState, {
         };
     },
     [FIRST_LOAD]: (state) => {
+
         return {
             ...state,
             firstLoad: true

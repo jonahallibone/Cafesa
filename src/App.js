@@ -17,11 +17,10 @@ function App() {
   const auth = useSelector(state => state.user)
 
   useEffect(() => {
-    console.log(auth);
     if(auth.firstLoad) {
       setFirebaseLoaded(true);
     }
-  }, [auth.user])
+  }, [auth])
 
   useEffect(() => {
     initFirebase();
