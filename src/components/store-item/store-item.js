@@ -1,20 +1,22 @@
 import React from "react";
 import styles from "./store-item.module.css";
 import Icon from "../icon/icon";
+import {Link} from "react-router-dom";
+
 import { Wifi, Coffee, Zap, Wind } from "react-feather";
 import { Container, Row, Col } from "react-bootstrap";
 
-const StoreItem = ({storeInfo}) => {
+const StoreItem = ({shop}) => {
     return(
-        <div className={styles.store_item}>
+        <Link to={`/shop/${shop.id}`} className={styles.store_item}>
             <div className={styles.store_item__header}>
                 <img 
                     className={styles.store_item__header_image}
-                    src="https://images.pexels.com/photos/2159065/pexels-photo-2159065.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
+                    src={shop.image_url} 
                 />
             </div>
             <div className={styles.store_item__body}>
-                <span className={styles.store_item__name}>Culture Coffee</span>
+                <span className={styles.store_item__name}>{shop.name}</span>
                 <Container className="no-gutters p-0">
                     <Row className="no-gutters">
                         <Col className={`d-flex ${styles.store_item__icon_row}`}>
@@ -34,7 +36,7 @@ const StoreItem = ({storeInfo}) => {
                     </Row>
                 </Container>
             </div>
-        </div>
+        </Link>
     )
 }
 

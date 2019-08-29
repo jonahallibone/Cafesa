@@ -9,6 +9,7 @@ import { Switch, Route } from 'react-router'
 import LoginPage from './pages/login-page/login-page';
 import { useDispatch, useSelector } from "react-redux";
 import PrivateRoute from './components/private-route/private-route';
+import ShopPage from './pages/shop-page/shop-page';
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/login" component={LoginPage} />
+            <Route path="/shop/:id" component={ShopPage} />
             <PrivateRoute path="/profile/:id" component={ProfilePage} />
           </Switch>
         </>
