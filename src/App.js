@@ -15,7 +15,7 @@ function App() {
 
   const dispatch = useDispatch();
   const [firebaseLoaded, setFirebaseLoaded] = useState(false);
-  const auth = useSelector(state => state.user)
+  const auth = useSelector(state => state.user);
 
   useEffect(() => {
     if(auth.firstLoad) {
@@ -28,8 +28,9 @@ function App() {
     
     firebase.auth().onAuthStateChanged(function(user) {
 
-      dispatch({type: "user/first-load"})
-
+      dispatch({type: "user/first-load"});
+      dispatch({type: "shops/get-all-shops"});
+      
       if(user) {
         dispatch({type: "user/sign-in", 
           payload: {

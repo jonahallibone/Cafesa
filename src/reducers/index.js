@@ -1,5 +1,13 @@
 import {createReducer} from "redux-starter-kit";
-import {SIGN_IN, FIRST_LOAD} from "../actions"
+
+import {
+    SIGN_IN, 
+    FIRST_LOAD,
+    SET_ALL_SHOPS,
+    SET_SHOP
+} from "../actions"
+
+import firebase from "../components/firebase/firebase";
 
 const initialState = {
     user: undefined,
@@ -19,10 +27,39 @@ export const userReducer = createReducer(initialState, {
         };
     },
     [FIRST_LOAD]: (state) => {
-
         return {
             ...state,
             firstLoad: true
         }
     }
 });
+
+const initialShopsState = {
+    locations: []
+}
+
+export const shopsReducer = createReducer(initialShopsState, { 
+    
+    [SET_ALL_SHOPS]: (state, { payload }) => {
+        console.log(payload);
+        return {
+            ...state, 
+            locations: payload
+        }
+    }
+});
+
+const singleShopState = {
+    shop: {}
+}
+
+export const singleShopReducer = createReducer(singleShopState, { 
+    
+    [SET_SHOP]: (state, { payload }) => {
+        return {
+            ...state, 
+            shop: payload
+        }
+    }
+});
+

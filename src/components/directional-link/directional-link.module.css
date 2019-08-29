@@ -1,0 +1,9 @@
+.directional_link {
+    font-weight: 500;
+    cursor: pointer; 
+    padding: 0 0 4rem 0;
+}
+
+.directional_link__icon {
+    margin-right: 1.5rem;
+}

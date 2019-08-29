@@ -1,7 +1,20 @@
 * > * {
   box-sizing: border-box;
-  color: #232323;
   font-family: soleil, sans-serif;
 }
 
+
+img {
+    display: block;
+    width: 100%;
+}
+
+:root {
+    --grey: #747d8c;
+    --light-grey: #dfe4ea;
+    --med-grey: #a4b0be;
+    --dark-grey: #2f3542;
+    --orange: #FF8762;
+    --light-orange: rgba(255, 135, 98, 0.15);
+}
 

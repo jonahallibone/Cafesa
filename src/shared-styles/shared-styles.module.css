@@ -4,3 +4,22 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
 }
+
+.text_grey {
+    color: var(--grey);
+}
+.text_light_grey {
+    color: var(--light-grey);
+}
+.text_med_grey {
+    color: var(--med-grey);
+}
+.text_dark_grey {
+    color: var(--dark-grey);
+}
+.text_orange { 
+    color: var(--orange);
+}
+.text_light_orange {
+    color: var(--light-orange);
+}

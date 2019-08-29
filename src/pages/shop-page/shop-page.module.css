@@ -1,0 +1,20 @@
+.shop_page {
+    padding-top: 174px;
+}
+
+.shop_name {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.shop__main_image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.shop__stats {
+    border: 2px solid var(--light-grey);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
