@@ -4,17 +4,16 @@
 
 .shop_name {
     font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.shop_address {
     margin-bottom: 2rem;
+    color: var(--orange);
 }
 
 .shop__main_image {
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
-}
-
-.shop__stats {
-    border: 2px solid var(--light-grey);
-    padding: 1.5rem;
-    border-radius: 8px;
 }

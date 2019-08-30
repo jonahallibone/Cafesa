@@ -1,0 +1,27 @@
+.tab_header {
+    border-bottom: 1px solid var(--light-grey);
+    margin-top: 3rem;
+}
+
+.tab_title {
+    padding: 1rem 0;
+    margin-right: 3rem;
+    color: var(--grey);
+    margin-bottom: -1px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tab_title.tab_title__selected {
+    color: var(--orange);
+    border-bottom: 1px solid var(--orange);
+}
+
+.tab_content {
+    padding-top: 2rem;
+}
+
+.tab_content p {
+    color: var(--dark-grey);
+    font-weight: 500;
+}

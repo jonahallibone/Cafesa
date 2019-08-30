@@ -6,6 +6,13 @@ import firebase from "../../components/firebase/firebase";
 import sharedStyles from "../../shared-styles/shared-styles.module.css";
 import styles from "./shop-page.module.css";
 import DirectionalLink from "../../components/directional-link/directional-link";
+import Tabs, {
+    TabTitle, 
+    TabHeader,
+    TabContent,
+    TabSection
+} from "../../components/tabs/tabs";
+import PriceSwap from "../../components/price-swap/price-swap";
 
 const ShopPage = ({match}) => {
     const dispatch = useDispatch();
@@ -40,22 +47,38 @@ const ShopPage = ({match}) => {
                 </Col>
             </Row>
             <Row>
-                <Col xs="6">
+                <Col xs="8">
                     <h1 className={styles.shop_name}>{shopData.name}</h1>
+                    <h6 className={styles.shop_address}>{shopData.address}</h6>
                     <div className={styles.shop__main_image}>
                         <img src={shopData.image_url} />
                     </div>
+                    <Tabs selected="about">
+                        <TabHeader>
+                            <TabTitle title="about">Shop Description</TabTitle>
+                            <TabTitle title="map">Map</TabTitle>
+                        </TabHeader>
+                        <TabContent>
+                            <TabSection title="about">
+                                <p>{shopData.description}</p>
+                            </TabSection>
+                            <TabSection title="map">
+
+                            </TabSection>
+                        </TabContent>
+                    </Tabs>
                 </Col>
-                <Col xs="6">
-                    <div className={styles.shop__stats}>
-                        <Container fluid="true" className="p-0">
-                            <Row>
-                                <Col xs="12" className="d-flex flex-row align-items-end">
-                                    
-                                </Col>
-                            </Row>
-                        </Container>
-                    </div>
+
+                {/* Right Side */}
+
+                <Col xs="4">
+                    <Container fluid="true" className="p-0">
+                        <Row>
+                            <Col xs="12" className="d-flex flex-row align-items-end">
+                                <PriceSwap price={shopData} />
+                            </Col>
+                        </Row>
+                    </Container>
                 </Col>
             </Row>
         </Container>
