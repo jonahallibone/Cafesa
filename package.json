@@ -18,6 +18,7 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-sticky": "^6.0.3",
+    "react-sticky-box": "^0.8.0",
     "redux": "^4.0.4",
     "redux-starter-kit": "^0.6.3"
   },

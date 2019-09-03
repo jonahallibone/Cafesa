@@ -46,7 +46,7 @@ const ShopPage = ({match}) => {
                     <DirectionalLink size={15}>Back to Shops</DirectionalLink>
                 </Col>
             </Row>
-            <Row>
+            <Row className="align-items-start">
                 <Col xs="8">
                     <h1 className={styles.shop_name}>{shopData.name}</h1>
                     <h6 className={styles.shop_address}>{shopData.address}</h6>
@@ -71,12 +71,12 @@ const ShopPage = ({match}) => {
 
                 {/* Right Side */}
 
-                <Col xs="4">
+                <Col xs="4"  className="position-sticky" style={{top: "-7px"}}>
                     <Container fluid="true" className="p-0">
                         <Row>
                             <Col xs="12" className="d-flex flex-row align-items-end">
                                 <PriceSwap price={shopData} />
-                            </Col>
+                            </Col>                            
                         </Row>
                     </Container>
                 </Col>

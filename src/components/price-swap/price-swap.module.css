@@ -1,11 +1,33 @@
 .price_swap__container {
     width: 100%;
+    margin-top: 6.75rem;
 }
 
 .price_swap {
-    padding: 3rem;
+    padding: 1.5rem;
     border-radius: 8px;
-    background: rgba(226,236,255, 0.6);
     width: 100%;
-    position: sticky;
+    margin-bottom: 1rem;
+    color: var(--dark-grey);
+    font-weight: 600;
+    /* background: rgba(112, 161, 255, .25); */
+    color: rgba(30, 144, 255,1.0);
+    border: 2px solid var(--light-grey);
+    line-height: 1;
+    transition: .345s ease all;
+}
+
+.price_swap:hover {
+    background: rgba(112, 161, 255, .25);
+    border-color: rgba(112, 161, 255, .25);
+    transition: .345s ease all;
+}
+
+.price_swap__price {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.price_swap__desc {
+    line-height: 1;
 }
