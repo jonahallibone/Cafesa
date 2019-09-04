@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { ChevronLeft } from "react-feather";
 import firebase from "../../components/firebase/firebase";
-import sharedStyles from "../../shared-styles/shared-styles.module.css";
 import styles from "./shop-page.module.css";
 import DirectionalLink from "../../components/directional-link/directional-link";
 import Tabs, {
@@ -22,8 +20,8 @@ const ShopPage = ({match}) => {
 
     useEffect(() => {
         console.log();
-        setShopData(shop.shop)
-;    }, [shop])
+        setShopData(shop.shop);    
+    }, [shop]);
 
     const fetchShop = async () => {
         const shop = await firebase.firestore().collection("shops").doc(match.params.id).get();

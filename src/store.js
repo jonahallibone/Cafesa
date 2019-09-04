@@ -2,14 +2,16 @@ import { configureStore } from "redux-starter-kit";
 import {
     userReducer, 
     shopsReducer,
-    singleShopReducer
+    singleShopReducer,
+    shoppingCartReducer
 } from "./reducers";
 
 
 const reducer = {
     user: userReducer,
     shops: shopsReducer,
-    shop: singleShopReducer
+    shop: singleShopReducer,
+    cart: shoppingCartReducer
 }
 
 export const store = configureStore({

@@ -12,6 +12,11 @@
     align-items: center;
 }
 
+.button.blue {
+    background:rgba(112, 161, 255, .25);
+    color: rgba(30, 144, 255,1.0);
+}
+
 .button__link,
 .button__link:hover {
     color: #FF8762;

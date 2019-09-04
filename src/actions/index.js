@@ -11,3 +11,8 @@ export const SET_ALL_SHOPS = createAction("shops/set-all-shops");
 
 // Single Shop Actions
 export const SET_SHOP = createAction("shop/get-shop");
+
+// Cart Actions
+
+export const ADD_TO_CART = createAction("cart/add/item");
+export const REMOVE_FROM_CART = createAction("cart/remove/item");

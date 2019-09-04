@@ -10,6 +10,7 @@ import LoginPage from './pages/login-page/login-page';
 import { useDispatch, useSelector } from "react-redux";
 import PrivateRoute from './components/private-route/private-route';
 import ShopPage from './pages/shop-page/shop-page';
+import CartToast from './components/cart-toast/cart-toast';
 
 function App() {
 
@@ -65,6 +66,7 @@ function App() {
         </>
       )
     }
+    <CartToast />
     </>
   );
 }

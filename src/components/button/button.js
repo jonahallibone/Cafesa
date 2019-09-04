@@ -2,30 +2,26 @@ import React from "react";
 import styles from "./button.module.css";
 import {Link} from "react-router-dom";
 
-const Button = ({type="button", to = null, children, style="", onClick}) => {
+const Button = ({type="button", to = null, children, onClick, ...rest}) => {
     switch(type) {
         case "link": 
-            return <LinkButton style={style} to={to}>{children}</LinkButton>
+            return <LinkButton to={to} {...rest}>{children}</LinkButton>
         default:
-            return <DefaultButton style={style} to={to} onClick={onClick}>{children}</DefaultButton>
+            return <DefaultButton to={to} onClick={onClick} {...rest}>{children}</DefaultButton>
     }
 }
 
-const getStyle = style => {
-    return style.length ? styles[style] : "";
-}
-
-const LinkButton = ({to, children, style}) => {
+const LinkButton = ({to, children}) => {
     return(
-        <Link to={to} className={`${styles.button} ${styles.button__link} ${ getStyle(style) }`}>
+        <Link to={to} className={`${styles.button} ${styles.button__link}`}>
             {children}
         </Link>
     )
 }
 
-const DefaultButton = ({children, style, onClick}) => {
+const DefaultButton = ({children, onClick, ...rest}) => {
     return (
-        <div className={`${styles.button} ${ getStyle(style) }`} onClick={onClick}>
+        <div className={`${styles.button}`} onClick={onClick} {...rest}>
             {children}
         </div>
     )

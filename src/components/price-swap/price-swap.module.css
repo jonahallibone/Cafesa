@@ -11,15 +11,15 @@
     color: var(--dark-grey);
     font-weight: 600;
     /* background: rgba(112, 161, 255, .25); */
-    color: rgba(30, 144, 255,1.0);
+    color: var(--dark-grey);
     border: 2px solid var(--light-grey);
     line-height: 1;
     transition: .345s ease all;
+    cursor: pointer;
 }
 
 .price_swap:hover {
-    background: rgba(112, 161, 255, .25);
-    border-color: rgba(112, 161, 255, .25);
+    border-color: var(--dark-grey);
     transition: .345s ease all;
 }
 
@@ -30,4 +30,26 @@
 
 .price_swap__desc {
     line-height: 1;
+}
+
+.add_to_cart {
+    padding: 1rem;
+    width: 100%;
+    background: rgba(30, 144, 255,1.0);
+    border-radius: 8px;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add_to_cart[disabled] {
+    background: var(--light-grey);
+}
+
+.price_swap__selected,
+.price_swap__selected:hover {
+    border: 2px solid var(--dark-grey);
+    background: var(--dark-grey);
+    color: #FFF;
 }

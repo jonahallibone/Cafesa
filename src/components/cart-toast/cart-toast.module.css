@@ -1,0 +1,26 @@
+.cart_toast {
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(100%);
+    transition: .345s ease all;
+}
+
+.cart_toast__visible {
+    transform: translateY(0);
+}
+
+.cart_toast__item_name {
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.cart_toast__total_price {
+    color: var(--orange);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 1rem;
+}

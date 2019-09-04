@@ -4,10 +4,10 @@ import {
     SIGN_IN, 
     FIRST_LOAD,
     SET_ALL_SHOPS,
-    SET_SHOP
+    SET_SHOP,
+    ADD_TO_CART,
+    REMOVE_FROM_CART
 } from "../actions"
-
-import firebase from "../components/firebase/firebase";
 
 const initialState = {
     user: undefined,
@@ -63,3 +63,25 @@ export const singleShopReducer = createReducer(singleShopState, {
     }
 });
 
+const shoppingCartState = { 
+    items: [],
+    lastUpdated: Date.now(),
+}
+
+export const shoppingCartReducer = createReducer(shoppingCartState, {
+    [ADD_TO_CART]: (state, { payload }) => {
+        console.log(payload)
+        return {
+            ...state,
+            items: [...state.items, payload],
+            lastUpdated: Date.now()
+        }
+    },
+    [REMOVE_FROM_CART]: (state, { payload }) => {
+        return {
+            ...state,
+            items: state.items.filter(item => item !== payload),
+            lastUpdated: Date.now()
+        }
+    }
+});
