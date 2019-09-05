@@ -94,8 +94,8 @@ const LoginPage = () => {
                                     </div>
                                     <Button>Sign In</Button>
                                     <div className={styles.button_group} >
-                                        <Button style="facebook" onClick={_signInWithFacebook}>Sign in with<Facebook color="#679BFF" /></Button>
-                                        <Button style="facebook">Sign in with<Twitter color="#679BFF" /></Button>
+                                        <Button onClick={_signInWithFacebook}>Sign in with<Facebook color="#679BFF" /></Button>
+                                        <Button>Sign in with<Twitter color="#679BFF" /></Button>
                                     </div>
                                 </Form>
                             )}

@@ -11,3 +11,13 @@
     justify-content: center;
     align-items: center;
 }
+
+.featured_shops {
+    margin-top: 6rem;
+}
+
+.borrough {
+    margin: 0 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid var(--orange);
+}

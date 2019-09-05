@@ -5,19 +5,10 @@ import { useSelector, useDispatch } from "react-redux";
 import firebase from "../../components/firebase/firebase";
 
 const Cart = () => {
-    const user = useSelector(state => state.user);
-    const cart = useSelector(state => state.cart);
-    
-    const [userData, setUserData] = useState({});
-    const [cartData, setCartData] = useState(null);
+    const userData = useSelector(state => state.user);
+    const cartData = useSelector(state => state.cart);
 
     const [shopData, setShopData] = useState({});
-
-    useEffect(() => {
-        setUserData(user);
-        setCartData(cart);
-    }, [cart, user])
-
 
     const _getShopData = async (shop_id) => {
         const shop = await firebase.firestore().collection("shops").doc(shop_id).get();
@@ -43,9 +34,12 @@ const Cart = () => {
                 </Col>
             </Row>
             <Row>
-                <Col xs="6">
+                <Col sm="6" xs="12">
                     <CartItem shopData={shopData} cartData={cartData}/>
                 </Col>
+            </Row>
+            <Row>
+
             </Row>
         </Container>
     )

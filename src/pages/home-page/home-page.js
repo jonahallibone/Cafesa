@@ -31,7 +31,20 @@ const HomePage = () => {
             <div className={styles.banner}>
                 <HomePageSlogan />
             </div>
-            <Container>
+            <Container className={styles.featured_shops}>
+                <Row className="justify-content-center">
+                    <Col xs="12" sm="8" md="8">
+                        <h1 className="font-weight-bold text-center">Check out our most recently added shops!</h1>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs="12" className="d-flex justify-content-center">
+                        <span className={styles.borrough}>Manhattan</span>
+                        <span className={styles.borrough}>Brooklyn</span>
+                        <span className={styles.borrough}>Queens</span>
+                        <span className={styles.borrough}>Bronx</span>
+                    </Col>
+                </Row>
                 <div className={sharedStyles.list}>
                     {_getList(shops)}
                 </div>

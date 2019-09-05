@@ -17,13 +17,14 @@ const ShopPage = ({match}) => {
     const shop = useSelector(state => state.shop);
     const cart = useSelector(state => state.cart);
 
-    const [shopData, setShopData] = useState({});
-    const [cartData, setCartData] = useState({});
 
-    useEffect(() => {
-        setShopData(shop.shop);
-        setCartData(cart);        
-    }, [shop, cart]);
+    const cartData = React.useMemo(() => {
+        return cart;
+    }, [cart]);
+
+    const shopData = React.useMemo(() => {
+        return shop.shop;
+    }, [shop]);
 
     const fetchShop = async () => {
         const shop = await firebase.firestore().collection("shops").doc(match.params.id).get();

@@ -6,23 +6,15 @@ import { ShoppingBag } from "react-feather";
 import { useDispatch, useSelector } from "react-redux";
 
 const CartToast = () => {
-    const cart = useSelector(state => state.cart);
+    const cartData = useSelector(state => state.cart);
     const dispatch =  useDispatch();
-
-    const [isCartEmpty, setIsCartEmpty] = useState(true);
-    const [cartData, setCartData] = useState({});
-    
-    useEffect(() => {   
-        setIsCartEmpty(cart.is_empty);
-        setCartData(cart);
-    }, [cart]);
 
     const _handleRemove = () => {
         dispatch({type: "cart/remove/item"});
     }
 
     return (
-        <div className={`${styles.cart_toast} ${isCartEmpty ? "" : styles.cart_toast__visible}`}>
+        <div className={`${styles.cart_toast} ${cartData.is_empty ? "" : styles.cart_toast__visible}`}>
             <Container>
                 <Row className="align-items-center">
                     <Col xs="6">
@@ -35,7 +27,7 @@ const CartToast = () => {
                         <span className={styles.cart_toast__total_price}></span>
                         <Button type="link" to="/cart">
                             <ShoppingBag size={18} style={{marginRight: ".5rem"}}/>
-                            View Cart (${isCartEmpty ? "" : cartData.items.price})
+                            View Cart (${cartData.is_empty ? "" : cartData.items.price})
                         </Button>
                     </Col>
                 </Row>

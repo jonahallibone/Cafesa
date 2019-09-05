@@ -46,7 +46,7 @@ const Header = () => {
                 <Row> 
                     <Col xs="8" className="d-flex justify-content-start align-items-center">
                         <div className={styles.logo}>
-                            <img src="/images/logo.svg" />
+                            <Link to="/"><img src="/images/logo.svg" /></Link>
                         </div>
                         <a className={styles["header-link"]}>How it works</a>
                         <a className={styles["header-link"]}>Our locations</a>
