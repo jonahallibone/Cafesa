@@ -7,22 +7,18 @@ import { useDispatch, useSelector } from "react-redux";
 
 const CartToast = () => {
     const cart = useSelector(state => state.cart);
+    const dispatch =  useDispatch();
 
     const [isCartEmpty, setIsCartEmpty] = useState(true);
-    const [cartData, setCartData] = useState(null);
+    const [cartData, setCartData] = useState({});
     
     useEffect(() => {   
-        cart.items.length ? setIsCartEmpty(false) : setIsCartEmpty(true);
-        console.log(cart);
+        setIsCartEmpty(cart.is_empty);
         setCartData(cart);
     }, [cart]);
 
-    const getPrice = () => {
-        if(cart.items.length) {
-            const total = cart.items.reduce((acc, item) => acc + item.price, 0);
-
-            return total;
-        }
+    const _handleRemove = () => {
+        dispatch({type: "cart/remove/item"});
     }
 
     return (
@@ -30,15 +26,16 @@ const CartToast = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs="6">
-                        <span className={styles.cart_toast__item_name}></span>
+                        <span className={styles.cart_toast__item_name}>{cartData.items !== undefined ? cartData.items.title : ""}</span>
                         &nbsp;
                         <span>to Bluestone Coffee</span>
+                        <Button style={{marginLeft: "1rem"}} onClick={_handleRemove}>Remove</Button>
                     </Col>
                     <Col className="d-flex align-items-center justify-content-end">
                         <span className={styles.cart_toast__total_price}></span>
-                        <Button>
+                        <Button type="link" to="/cart">
                             <ShoppingBag size={18} style={{marginRight: ".5rem"}}/>
-                            View Cart (${getPrice()})
+                            View Cart (${isCartEmpty ? "" : cartData.items.price})
                         </Button>
                     </Col>
                 </Row>

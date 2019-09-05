@@ -3,48 +3,55 @@ import styles from "./price-swap.module.css";
 import { Col, Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 
-const PriceSwap = () => {
+const PriceSwap = ({cart, shop}) => {
     const dispatch = useDispatch();
-    const cart = useSelector(state => state.cart);
 
     const [selectedTier, setSelectedTier] = useState({});
-    const [cartButtonText, setCartButtonText] = useState("Please selected an option");
+    const [cartData, setCartData] = useState({});
+    const [shopData, setShopData] = useState({});
 
-    const tiers = [
-        {
-            price: 50,
-            description: "Small Coffee, Tea and Specialty Drinks",
-            title: "Unlimited Small"
-        },
-        {
-            price: 60,
-            description: "Medium Coffee, Tea and Specialty Drinks",
-            title: "Unlimited Medium"
-        },
-        {
-            price: 65,
-            description: "Large Coffee, Tea and Specialty Drinks",
-            title: "Unlimited Large"
-        }
-    ]
+    useEffect(() => {
+        setCartData(cart);
+        setShopData(shop);
+    }, [cart, shop])
 
     
     const _handleClick = tier => {
-        setSelectedTier(tier.title === selectedTier.title ? {} : tier)
-        setCartButtonText(`Add ${tier.title} to Cart!`)
+        // console.log(shopData);
+        setSelectedTier(tier.title === selectedTier.title ? {} : {...tier, shop_id: shopData.shop_id})
     }
 
     const _addToCart = () => {
         dispatch({type: "cart/add/item", payload: selectedTier })
     }
 
+    const _getTiers = () => {
+        if(shopData.tiers) {
+            return shopData.tiers.map((tier, index) => {
+                return <Price selectedTier={selectedTier} onClick={() => _handleClick(tier)} price={tier.price} key={index} description={tier.description} title={tier.title} />
+            })
+        }
+    }
+
+    const getCartButtonText = cartData => {
+        if(selectedTier.title === undefined) {
+            return "Please selected an option"
+        }
+
+        else if(cartData.is_empty) {
+            return `Add ${selectedTier.title} to Cart`;
+        }
+
+        else if(!cartData.is_empty) {
+            return `Update cart with ${selectedTier.title}`;
+        }
+    }
     
     return (
         <div className={`${styles.price_swap__container}`}>
-            {tiers.map((tier, index) => <Price selectedTier={selectedTier} onClick={() => _handleClick(tier)} price={tier.price} key={index} description={tier.description} title={tier.title} />)}
-
+            {_getTiers()}
             <div className={styles.add_to_cart} disabled={selectedTier.title === undefined} onClick={_addToCart}>
-                {cartButtonText}
+                {getCartButtonText(cartData)}
             </div>
         </div>
     )

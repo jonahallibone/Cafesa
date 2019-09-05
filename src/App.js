@@ -11,6 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 import PrivateRoute from './components/private-route/private-route';
 import ShopPage from './pages/shop-page/shop-page';
 import CartToast from './components/cart-toast/cart-toast';
+import Cart from './pages/cart/cart';
 
 function App() {
 
@@ -61,6 +62,7 @@ function App() {
             <Route exact path="/" component={HomePage} />
             <Route path="/login" component={LoginPage} />
             <Route path="/shop/:id" component={ShopPage} />
+            <Route path="/cart" component={Cart} />
             <PrivateRoute path="/profile/:id" component={ProfilePage} />
           </Switch>
         </>

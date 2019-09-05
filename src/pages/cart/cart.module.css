@@ -1,0 +1,36 @@
+.cart {
+    padding-top: 8rem;
+}
+
+.cart_item {
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 4rem;
+}
+
+.cart__shop_thumb {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cart__shop_thumb::after {
+    content: '';
+    padding-top: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+
+}
+
+.cart__shop_thumb img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cart__remove {
+    color: red;
+}

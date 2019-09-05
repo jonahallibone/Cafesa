@@ -15,19 +15,21 @@ import PriceSwap from "../../components/price-swap/price-swap";
 const ShopPage = ({match}) => {
     const dispatch = useDispatch();
     const shop = useSelector(state => state.shop);
+    const cart = useSelector(state => state.cart);
 
     const [shopData, setShopData] = useState({});
+    const [cartData, setCartData] = useState({});
 
     useEffect(() => {
-        console.log();
-        setShopData(shop.shop);    
-    }, [shop]);
+        setShopData(shop.shop);
+        setCartData(cart);        
+    }, [shop, cart]);
 
     const fetchShop = async () => {
         const shop = await firebase.firestore().collection("shops").doc(match.params.id).get();
 
         if(shop.exists) {
-            dispatch({type: "shop/get-shop", payload: shop.data()});
+            dispatch({type: "shop/get-shop", payload: {shop_id: shop.id, ...shop.data()}});
         }
     }
 
@@ -35,6 +37,10 @@ const ShopPage = ({match}) => {
 
     useEffect(() => {
         fetchShop();
+
+        return () => {
+            dispatch({type: "shop/get-shop", payload: {} });
+        }
     }, []);
 
     return ( 
@@ -73,7 +79,7 @@ const ShopPage = ({match}) => {
                     <Container fluid="true" className="p-0">
                         <Row>
                             <Col xs="12" className="d-flex flex-row align-items-end">
-                                <PriceSwap price={shopData} />
+                                <PriceSwap cart={cartData} shop={shopData} price={shopData} />
                             </Col>                            
                         </Row>
                     </Container>

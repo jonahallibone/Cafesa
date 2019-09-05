@@ -64,7 +64,8 @@ export const singleShopReducer = createReducer(singleShopState, {
 });
 
 const shoppingCartState = { 
-    items: [],
+    items: {},
+    is_empty: true,
     lastUpdated: Date.now(),
 }
 
@@ -73,14 +74,16 @@ export const shoppingCartReducer = createReducer(shoppingCartState, {
         console.log(payload)
         return {
             ...state,
-            items: [...state.items, payload],
+            items: payload,
+            is_empty: false,
             lastUpdated: Date.now()
         }
     },
-    [REMOVE_FROM_CART]: (state, { payload }) => {
+    [REMOVE_FROM_CART]: (state) => {
         return {
             ...state,
-            items: state.items.filter(item => item !== payload),
+            items: {},
+            is_empty: true,
             lastUpdated: Date.now()
         }
     }
