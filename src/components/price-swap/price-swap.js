@@ -12,17 +12,28 @@ const PriceSwap = ({cart, shop}) => {
 
     useEffect(() => {
         setCartData(cart);
+        
+        if(!cart.is_empty) {
+            console.log(cart);
+            setSelectedTier(cart.items);
+        }
+
         setShopData(shop);
     }, [cart, shop])
 
     
     const _handleClick = tier => {
-        // console.log(shopData);
+        setTier(tier);
+    }
+
+    const setTier = tier => {
         setSelectedTier(tier.title === selectedTier.title ? {} : {...tier, shop_id: shopData.shop_id})
     }
 
     const _addToCart = () => {
-        dispatch({type: "cart/add/item", payload: selectedTier })
+        if(selectedTier.title !== undefined) {
+            dispatch({type: "cart/add/item", payload: selectedTier })
+        }
     }
 
     const _getTiers = () => {

@@ -18,7 +18,7 @@ const HomePage = () => {
             });
 
             dispatch({type: "shops/set-all-shops", payload: locations});
-        })
+        });
     }, []);
 
     const _getList = (shops) => {
