@@ -3,17 +3,24 @@ import styles from "./header.module.css";
 import {Container, Col, Row} from 'react-bootstrap'
 import Button from "../button/button";
 import {Link} from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { LogOut, User } from "react-feather";
 
 const Header = () => {
     const auth = useSelector(state => state.user)
     const [firebaseLoaded, setFirebaseLoaded] = useState(false);
+    const dispatch = useDispatch();
     
     useEffect(() => {
         if(auth.firstLoad) {
           setFirebaseLoaded(true);
         }
       }, [auth.user])
+
+
+    const _logOut = () => { 
+        
+    }
 
     const _displaySignInUp = () => {
         return (
@@ -26,7 +33,10 @@ const Header = () => {
 
     const _displayUser = () => {
         return (
-            <Link to={`/profile/${auth.user.id}`}>{auth.user.name}</Link>
+            <>
+                <Link to={`/profile/${auth.user.id}`}><User size={18} /></Link>
+                <LogOut size={18} style={{marginLeft: "1rem"}}/>
+            </>
         )
     }
 

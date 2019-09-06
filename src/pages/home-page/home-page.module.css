@@ -21,3 +21,7 @@
     font-weight: bold;
     border-bottom: 2px solid var(--orange);
 }
+
+.burrough_row {
+    margin: 2rem 0 0 0;
+}
