@@ -49,12 +49,8 @@ const PriceSwap = ({cart, shop}) => {
             return "Please selected an option"
         }
 
-        else if(cartData.is_empty) {
-            return `Add ${selectedTier.title} to Cart`;
-        }
-
-        else if(!cartData.is_empty) {
-            return `Update cart with ${selectedTier.title}`;
+        else {
+            return `Subscribe`;
         }
     }
     

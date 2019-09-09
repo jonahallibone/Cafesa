@@ -3,6 +3,8 @@ import { createAction } from "redux-starter-kit";
 // User Actions
 export const SIGN_IN = createAction("user/sign-in");
 export const SIGN_IN_ERROR = createAction("user/sign-in-error");
+export const SIGN_OUT = createAction("user/sign-in");
+export const SIGN_OUT_ERROR = createAction("user/sign-out-error");
 export const FIRST_LOAD = createAction("user/first-load");
 
 

@@ -11,6 +11,7 @@ import Tabs, {
     TabSection
 } from "../../components/tabs/tabs";
 import PriceSwap from "../../components/price-swap/price-swap";
+import Checkout from "../../components/checkout/checkout";
 
 const ShopPage = ({match}) => {
     const dispatch = useDispatch();
@@ -80,7 +81,18 @@ const ShopPage = ({match}) => {
                     <Container fluid="true" className="p-0">
                         <Row>
                             <Col xs="12" className="d-flex flex-row align-items-end">
-                                <PriceSwap cart={cartData} shop={shopData} price={shopData} />
+                                <div className={styles.shop__checkout}>
+                                    <div 
+                                        className={`${styles.shop__checkout__container} ${!cartData.is_empty ? styles.shop__checkout__container_transform : ""}`}
+                                    >
+                                        <div className={styles.shop__checkout__slide}>
+                                            <PriceSwap cart={cartData} shop={shopData} price={shopData} />
+                                        </div>
+                                        <div className={styles.shop__checkout__slide}>
+                                            <Checkout />
+                                        </div>
+                                    </div>
+                                </div>
                             </Col>                            
                         </Row>
                     </Container>

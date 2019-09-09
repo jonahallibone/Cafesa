@@ -10,16 +10,16 @@ const Header = () => {
     const auth = useSelector(state => state.user)
     const [firebaseLoaded, setFirebaseLoaded] = useState(false);
     const dispatch = useDispatch();
-    
+
     useEffect(() => {
         if(auth.firstLoad) {
           setFirebaseLoaded(true);
         }
-      }, [auth.user])
+    }, [auth.user])
 
 
     const _logOut = () => { 
-        
+        dispatch({type: ""})
     }
 
     const _displaySignInUp = () => {
@@ -33,10 +33,9 @@ const Header = () => {
 
     const _displayUser = () => {
         return (
-            <>
-                <Link to={`/profile/${auth.user.id}`}><User size={18} /></Link>
-                <LogOut size={18} style={{marginLeft: "1rem"}}/>
-            </>
+            <div>
+                <Link to={`/profile/${auth.user.id}`}>{auth.user.name}</Link>
+            </div>
         )
     }
 
