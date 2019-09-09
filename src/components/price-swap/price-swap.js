@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./price-swap.module.css";
 import { Col, Row } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 const PriceSwap = ({cart, shop}) => {
     const dispatch = useDispatch();
@@ -27,7 +27,7 @@ const PriceSwap = ({cart, shop}) => {
     }
 
     const setTier = tier => {
-        setSelectedTier(tier.title === selectedTier.title ? {} : {...tier, shop_id: shopData.shop_id})
+        setSelectedTier(tier.title === selectedTier.title ? {} : {...tier, shop_id: shopData.shop_id, shop_name: shopData.name})
     }
 
     const _addToCart = () => {

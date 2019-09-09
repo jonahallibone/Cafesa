@@ -1,0 +1,12 @@
+.checkout {
+    margin-top: 6.75rem;
+    padding: 2rem;
+    border-radius: 8px;
+    background: #f1f2f6;
+    border-radius: 8px;
+    color: var(--dark-grey);
+}
+
+.cart_desc {
+    display: block
+}
