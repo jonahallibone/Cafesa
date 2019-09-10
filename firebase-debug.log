@@ -621,3 +621,503 @@ SyntaxError: Unexpected identifier
 [debug] [2019-09-10T18:21:09.483Z] [runtime-status] Ephemeral server used! {}
 [debug] [2019-09-10T18:21:25.230Z] [runtime-status] Ephemeral server survived. {}
 [info] i  functions: Finished "createPayment" in ~6s
+[debug] [2019-09-10T18:27:31.309Z] Accepted request OPTIONS /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:27:42.548Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:27:42.551Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:27:42.789Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:27:42.824Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:27:42.825Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:27:53.408Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:27:53.409Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:27:53.409Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:27:53.421Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2616.sock"}
+[debug] [2019-09-10T18:27:53.423Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2616.sock"}
+[debug] [2019-09-10T18:27:53.439Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:27:53.454Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "createPayment" in ~1s
+[debug] [2019-09-10T18:27:54.000Z] Accepted request POST /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:27:58.684Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:27:58.685Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:27:58.693Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:27:58.695Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:27:58.697Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:27:58.874Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:27:58.874Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:27:58.874Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:27:58.884Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2632.sock"}
+[debug] [2019-09-10T18:27:58.884Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2632.sock"}
+[debug] [2019-09-10T18:27:59.123Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:28:01.980Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:28:02.424Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:28:04.715Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:28:04.716Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:28:04.719Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:28:04.720Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:28:04.721Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:28:07.117Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "createPayment" in ~6s
+[debug] [2019-09-10T18:28:22.307Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:28:22.407Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:28:28.769Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:28:28.770Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:28:28.810Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:28:28.846Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:28:28.847Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:28:57.612Z] Accepted request OPTIONS /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:29:04.135Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:29:04.137Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:29:04.188Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:29:04.202Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:29:04.202Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:29:07.982Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:29:07.982Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:29:07.982Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:29:07.991Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2659.sock"}
+[debug] [2019-09-10T18:29:07.994Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2659.sock"}
+[debug] [2019-09-10T18:29:08.001Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:29:08.009Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-09-10T18:29:08.010Z] Accepted request POST /cafesa-77e07/us-central1/createPayment --> createPayment
+[info] i  functions: Finished "createPayment" in ~1s
+[debug] [2019-09-10T18:29:08.403Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:29:08.404Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:29:08.407Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:29:08.408Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:29:08.409Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:29:08.580Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:29:08.580Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:29:08.580Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:29:08.659Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2660.sock"}
+[debug] [2019-09-10T18:29:08.660Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2660.sock"}
+[debug] [2019-09-10T18:29:08.736Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:29:14.357Z] [runtime-status] Ephemeral server survived. {}
+[info] >  writing to firebase
+[info] i  functions: Finished "createPayment" in ~11s
+[debug] [2019-09-10T18:32:38.826Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:32:39.181Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:32:47.341Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:32:47.342Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:32:47.389Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:32:47.403Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:32:47.404Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:34:06.481Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:34:18.515Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:34:18.515Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:34:18.535Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:34:18.559Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:34:18.560Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:34:52.198Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:34:52.299Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:34:54.416Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:34:54.417Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:34:54.421Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:34:54.421Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:34:54.422Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:35:00.697Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:35:00.796Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:35:02.347Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:35:02.348Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:35:02.351Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:35:02.352Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:35:02.354Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:39:41.566Z] Accepted request OPTIONS /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:39:55.575Z] Accepted request OPTIONS /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:40:01.834Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:40:01.834Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:40:01.835Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:40:01.838Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:40:01.940Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:40:01.940Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:40:02.054Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:40:02.054Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:40:02.055Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:40:02.055Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:40:15.290Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:40:15.290Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:40:15.290Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:40:15.291Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:40:15.291Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:40:15.291Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:40:15.298Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2720.sock"}
+[debug] [2019-09-10T18:40:15.299Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2720.sock"}
+[debug] [2019-09-10T18:40:15.303Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2719.sock"}
+[debug] [2019-09-10T18:40:15.304Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2719.sock"}
+[debug] [2019-09-10T18:40:15.310Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:40:15.319Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:40:15.322Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "createPayment" in ~1s
+[debug] [2019-09-10T18:40:15.329Z] Accepted request POST /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:40:15.341Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "createPayment" in ~1s
+[debug] [2019-09-10T18:40:15.350Z] Accepted request POST /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:40:15.784Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:40:15.785Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:40:15.789Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:40:15.792Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:40:15.794Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:40:15.937Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:40:15.937Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:40:15.943Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:40:15.944Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:40:15.945Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:40:16.021Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:40:16.021Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:40:16.022Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:40:16.039Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2721.sock"}
+[debug] [2019-09-10T18:40:16.039Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2721.sock"}
+[debug] [2019-09-10T18:40:16.215Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:40:16.217Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:40:16.217Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:40:16.217Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:40:16.231Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2722.sock"}
+[debug] [2019-09-10T18:40:16.236Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2722.sock"}
+[debug] [2019-09-10T18:40:16.277Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:40:27.367Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-09-10T18:40:27.378Z] [runtime-status] Ephemeral server survived. {}
+[info] >  writing to firebase
+[info] i  functions: Finished "createPayment" in ~8s
+[info] >  writing to firebase
+[info] i  functions: Finished "createPayment" in ~8s
+[debug] [2019-09-10T18:41:02.419Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:41:02.562Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:41:04.789Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:41:04.791Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:41:04.794Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:41:04.795Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:41:04.796Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:41:34.797Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:41:48.939Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:41:48.939Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:41:48.974Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:41:49.009Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:41:49.010Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:42:54.111Z] Accepted request OPTIONS /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:43:03.230Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:43:03.231Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:43:03.240Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:43:03.243Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:43:03.245Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:43:10.846Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:43:10.846Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:43:10.846Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:43:10.995Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2743.sock"}
+[debug] [2019-09-10T18:43:10.996Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2743.sock"}
+[debug] [2019-09-10T18:43:11.003Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:43:11.012Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "createPayment" in ~1s
+[debug] [2019-09-10T18:43:11.013Z] Accepted request POST /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:43:11.584Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:43:11.585Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:43:11.588Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:43:11.589Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:43:11.590Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:43:11.754Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:43:11.755Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:43:11.755Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:43:11.764Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2744.sock"}
+[debug] [2019-09-10T18:43:11.765Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2744.sock"}
+[debug] [2019-09-10T18:43:12.121Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:43:18.404Z] [runtime-status] Ephemeral server survived. {}
+[info] >  writing to firebase
+[info] >  QueryDocumentSnapshot {
+[info] >    _ref:
+[info] >     DocumentReference {
+[info] >       _firestore:
+[info] >        Firestore {
+[info] >          _settings: [Object],
+[info] >          _settingsFrozen: true,
+[info] >          _serializer: [Serializer],
+[info] >          _projectId: 'cafesa-77e07',
+[info] >          _lastSuccessfulRequest: 1568141002519,
+[info] >          _preferTransactions: false,
+[info] >          _clientPool: [ClientPool] },
+[info] >       _path:
+[info] >        QualifiedResourcePath {
+[info] >          segments: [Array],
+[info] >          projectId: 'cafesa-77e07',
+[info] >          databaseId: '(default)' } },
+[info] >    _fieldsProto:
+[info] >     { displayName: { stringValue: 'Jonah Allibone', valueType: 'stringValue' },
+[info] >       disabled: { booleanValue: false, valueType: 'booleanValue' },
+[info] >       businessAccount: { booleanValue: false, valueType: 'booleanValue' },
+[info] >       email:
+[info] >        { stringValue: 'jonah.allibone@mymail.champlain.edu',
+[info] >          valueType: 'stringValue' },
+[info] >       stripe_customer:
+[info] >        { stringValue: 'cus_FmSbZdyiOQC1hC', valueType: 'stringValue' },
+[info] >       uid:
+[info] >        { stringValue: 'jcV0X5GmWyeks8gNTGgkkU4pG3S2',
+[info] >          valueType: 'stringValue' },
+[info] >       photoURL:
+[info] >        { stringValue: 'https://graph.facebook.com/10215168862721602/picture',
+[info] >          valueType: 'stringValue' } },
+[info] >    _serializer:
+[info] >     Serializer { createReference: [Function], timestampsInSnapshots: true },
+[info] >    _readTime: Timestamp { _seconds: 1568141002, _nanoseconds: 512207000 },
+[info] >    _createTime: Timestamp { _seconds: 1568061741, _nanoseconds: 183688000 },
+[info] >    _updateTime: Timestamp { _seconds: 1568061741, _nanoseconds: 183688000 } }
+[info] i  functions: Finished "createPayment" in ~5s
+[debug] [2019-09-10T18:45:07.782Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:45:08.219Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:45:09.950Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:45:09.951Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:45:09.955Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:45:09.957Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:45:09.961Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:45:13.566Z] Accepted request OPTIONS /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:45:14.148Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:45:14.149Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:45:14.156Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:45:14.157Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:45:14.158Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:45:14.330Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:45:14.330Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:45:14.330Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:45:14.340Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2760.sock"}
+[debug] [2019-09-10T18:45:14.340Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2760.sock"}
+[debug] [2019-09-10T18:45:14.348Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:45:14.357Z] Accepted request POST /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:45:14.387Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "createPayment" in ~1s
+[debug] [2019-09-10T18:45:14.875Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:45:14.876Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:45:14.879Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:45:14.880Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:45:14.881Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:45:15.054Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:45:15.054Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:45:15.054Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:45:15.065Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2761.sock"}
+[debug] [2019-09-10T18:45:15.065Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2761.sock"}
+[debug] [2019-09-10T18:45:15.087Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:45:15.372Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "createPayment" in ~4s
+[debug] [2019-09-10T18:47:53.744Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:47:57.273Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:47:57.373Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:48:00.448Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:48:01.575Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:48:03.190Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:48:03.191Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:48:03.194Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:48:03.194Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:48:03.194Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:48:03.195Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:48:03.195Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:48:03.197Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:48:03.289Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:48:03.290Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:48:03.290Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:48:03.291Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:48:03.325Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:48:03.327Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:48:03.327Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:48:03.328Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:48:03.328Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:48:03.328Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:48:03.328Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:48:03.328Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:48:04.976Z] Accepted request OPTIONS /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:48:06.280Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:48:06.281Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:48:06.294Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:48:06.296Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:48:06.297Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:48:13.251Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:48:13.251Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:48:13.251Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:48:13.262Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2790.sock"}
+[debug] [2019-09-10T18:48:13.263Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2790.sock"}
+[debug] [2019-09-10T18:48:13.277Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:48:13.284Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-09-10T18:48:13.285Z] Accepted request POST /cafesa-77e07/us-central1/createPayment --> createPayment
+[info] i  functions: Finished "createPayment" in ~1s
+[debug] [2019-09-10T18:48:13.935Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:48:13.937Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:48:13.940Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:48:13.941Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:48:13.942Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:48:14.125Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:48:14.125Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:48:14.126Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:48:14.135Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2791.sock"}
+[debug] [2019-09-10T18:48:14.136Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2791.sock"}
+[debug] [2019-09-10T18:48:14.386Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:48:26.383Z] [runtime-status] Ephemeral server survived. {}
+[info] >  writing to firebase
+[info] >  true
+[info] i  functions: Finished "createPayment" in ~11s
+[debug] [2019-09-10T18:51:04.990Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:51:06.709Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:51:06.709Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:51:06.713Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:51:06.714Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:51:06.714Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:51:14.150Z] Accepted request OPTIONS /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:51:15.334Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:51:15.336Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:51:15.347Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:51:15.348Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:51:15.349Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:51:15.516Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:51:15.516Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:51:15.516Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:51:15.567Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2812.sock"}
+[debug] [2019-09-10T18:51:15.568Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2812.sock"}
+[debug] [2019-09-10T18:51:15.575Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:51:15.582Z] Accepted request POST /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:51:15.587Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "createPayment" in ~1s
+[debug] [2019-09-10T18:51:16.398Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:51:16.399Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:51:16.406Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:51:16.407Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:51:16.407Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:51:16.585Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:51:16.585Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:51:16.585Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:51:16.598Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2813.sock"}
+[debug] [2019-09-10T18:51:16.599Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2813.sock"}
+[debug] [2019-09-10T18:51:16.732Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:51:25.425Z] [runtime-status] Ephemeral server survived. {}
+[info] >  writing to firebase
+[info] >  true
+[info] >  WriteResult {
+[info] >    _writeTime: Timestamp { _seconds: 1568141489, _nanoseconds: 596754000 } }
+[info] i  functions: Finished "createPayment" in ~5s
+[debug] [2019-09-10T18:53:50.219Z] Accepted request OPTIONS /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:54:04.465Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:54:04.466Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:54:04.545Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:54:04.580Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:54:04.582Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:54:17.264Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:54:17.264Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:54:17.264Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:54:17.368Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2922.sock"}
+[debug] [2019-09-10T18:54:17.369Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2922.sock"}
+[debug] [2019-09-10T18:54:17.377Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:54:17.383Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "createPayment" in ~1s
+[debug] [2019-09-10T18:54:19.260Z] Accepted request POST /cafesa-77e07/us-central1/createPayment --> createPayment
+[debug] [2019-09-10T18:54:20.774Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[info] i  functions: Beginning execution of "createPayment"
+[debug] [2019-09-10T18:54:20.775Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:54:20.784Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:54:20.785Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:54:20.786Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:54:21.087Z] [runtime-status] Trigger "createPayment" has been found, beginning invocation! {}
+[debug] [2019-09-10T18:54:21.087Z] [runtime-status]  {"httpsTrigger":{},"name":"createPayment","entryPoint":"createPayment"}
+[debug] [2019-09-10T18:54:21.087Z] [runtime-status] Running createPayment in mode HTTPS {}
+[debug] [2019-09-10T18:54:21.099Z] {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2927.sock"}
+[debug] [2019-09-10T18:54:21.100Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/38/pd5yv68517s1t3f644634c6c0000gq/T/firebase_emulator_invocation_2927.sock"}
+[debug] [2019-09-10T18:54:21.323Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-09-10T18:54:32.688Z] [runtime-status] Ephemeral server survived. {}
+[info] >  writing to firebase
+[info] >  true
+[info] >  WriteResult {
+[info] >    _writeTime: Timestamp { _seconds: 1568141678, _nanoseconds: 65830000 } }
+[info] i  functions: Finished "createPayment" in ~6s
+[debug] [2019-09-10T18:54:50.756Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:54:50.857Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:54:52.793Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:54:52.793Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:54:52.797Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:54:52.798Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:54:52.799Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:55:10.393Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:55:10.493Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:55:12.157Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:55:12.158Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:55:12.163Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:55:12.165Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:55:12.174Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:55:14.499Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:55:14.600Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:55:16.572Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:55:16.573Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:55:16.576Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:55:16.577Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:55:16.579Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:55:19.027Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:55:19.128Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:55:20.729Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:55:20.730Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:55:20.733Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:55:20.734Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:55:20.735Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:55:21.309Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:55:21.461Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:55:23.318Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:55:23.322Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:55:23.327Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:55:23.328Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:55:23.331Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:55:41.012Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:55:41.918Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:55:44.061Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:55:44.062Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:55:44.065Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:55:44.066Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:55:44.067Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-10T18:56:05.288Z] File /Users/jonahallibone/Desktop/Cafesa/functions/index.js changed, reloading triggers
+[debug] [2019-09-10T18:56:06.841Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-10T18:56:06.842Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-10T18:56:06.845Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-10T18:56:06.847Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-10T18:56:06.851Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}

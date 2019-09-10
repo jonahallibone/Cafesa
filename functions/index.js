@@ -96,19 +96,28 @@ const createPayment = async (req, res) => {
       // console.log(subscription)
       if(subscription.id) {
         // Modify Firebase user record
-        const dbmod = await db.collection('users').doc(user_data.uid).set({
-          subscription: {
-            subscription_id: subscription.id,
-            shop_id: cart.items.shop_id,
-            cost: cart.items.price 
-          }
-        }).catch(console.error);
+        // Define ref to user doc
+        const userRef = db.collection('users').doc(user_data.uid);
 
-        console.log(dbmod)
+        // Query for ID
+        const userDoc = await userRef.get();
+        // check if userdoc exists
+        if(userDoc.exists) {
+          // Update user with new subscription
+          await userRef.update({
+            subscription: {
+              subscription_id: subscription.id,
+              shop_id: cart.shop_id,
+              cost: cart.price 
+            }
+          }).catch(console.error);
+        }
 
+        //Subscription was a sucess
         return res.json({response: "success"});
       }
 
+      //Something went wrong
       else return res.json({response: "error"});
 
       } catch (err) {

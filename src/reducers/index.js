@@ -6,14 +6,17 @@ import {
     SET_ALL_SHOPS,
     SET_SHOP,
     ADD_TO_CART,
-    REMOVE_FROM_CART
+    REMOVE_FROM_CART,
+    GET_USER_FROM_FIRESTORE
 } from "../actions"
 
 const initialState = {
     user: undefined,
     token: undefined,
     authenticated: false,
-    firstLoad: false
+    firstLoad: false,
+    subscription: {},
+    fetching: true
 }
 
 export const userReducer = createReducer(initialState, {
@@ -30,6 +33,14 @@ export const userReducer = createReducer(initialState, {
         return {
             ...state,
             firstLoad: true
+        }
+    },
+    [GET_USER_FROM_FIRESTORE]: (state, { payload }) => {
+        console.log(payload)
+        return {
+            ...state,
+            fetching: false,
+            subscription: payload.subscription
         }
     }
 });

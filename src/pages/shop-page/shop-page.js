@@ -18,7 +18,6 @@ const ShopPage = ({match}) => {
     const shop = useSelector(state => state.shop);
     const cart = useSelector(state => state.cart);
 
-
     const cartData = React.useMemo(() => {
         return cart;
     }, [cart]);

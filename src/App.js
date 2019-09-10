@@ -18,54 +18,67 @@ function App() {
   const auth = useSelector(state => state.user);
 
   useEffect(() => {
-    if(auth.firstLoad) {
-      setFirebaseLoaded(true);
-    }
+	if(auth.firstLoad) {
+			setFirebaseLoaded(true);
+	}
   }, [auth])
 
   useEffect(() => {
-    initFirebase();
-    
-    firebase.auth().onAuthStateChanged(function(user) {
+	initFirebase();
 
-      dispatch({type: "user/first-load"});
-      dispatch({type: "shops/get-all-shops"});
-      
-      if(user) {
-        dispatch({type: "user/sign-in", 
-          payload: {
-            user: {
-                id: user.uid,
-                profilePicture: user.photoURL,
-                email: user.email,
-                name: user.displayName
-            },
-          }
-        });
-      }
-    });
+	firebase.auth().onAuthStateChanged(function(user) {
+
+		dispatch({type: "user/first-load"});
+		dispatch({type: "shops/get-all-shops"});
+		
+		// Get supplemental user data
+		getSubscriptionDetails(user);
+
+		if(user) {
+			dispatch({type: "user/sign-in",
+				payload: {
+					user: {
+						id: user.uid,
+						profilePicture: user.photoURL,
+						email: user.email,
+						name: user.displayName
+					},
+				}
+			});
+		}
+	});
   }, []);
 
+  const getSubscriptionDetails = async (user) => {
+		const user_doc = await firebase.firestore().collection("users").doc(user.uid).get();
+		
+		// If user exists
+		if(user_doc.exists) {
+			const user_data = user_doc.data();
+			dispatch({type: "user/get-user-from-firestore", payload: user_data});
+		}
+  }
+
   return (
-    <>
-      <Header firebaseLoaded={firebaseLoaded} />
-      {
-        !firebaseLoaded 
-        ? 
-        <></>
-        :
-        ( 
-        <>
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/login" component={LoginPage} />
-            <Route path="/shop/:id" component={ShopPage} />
-            <PrivateRoute path="/profile/:id" component={ProfilePage} />
-          </Switch>
-        </>
-      )
-    }
-    </>
+	<>
+	  <Header firebaseLoaded={firebaseLoaded} />
+	  {
+	!firebaseLoaded
+	?
+	<></>
+	:
+	(
+	<>
+	  <Switch>
+		<Route exact path="/" component={HomePage} />
+		<Route path="/login" component={LoginPage} />
+		<Route path="/shop/:id" component={ShopPage} />
+		<PrivateRoute path="/profile/:id" component={ProfilePage} />
+	  </Switch>
+	</>
+	  )
+	}
+	</>
   );
 }
 
