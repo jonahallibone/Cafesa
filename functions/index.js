@@ -43,14 +43,21 @@ const createPlan = async (cart, user) => {
 
 const createSubscription = async (plan, user) => {
   return await stripe.subscriptions.create({
-    customer: user.uid,
+    customer: user.stripe_customer,
     items: [
       {
         plan: plan.id,
       },
     ]
-  }, function(err, subscription) {
-      // asynchronously called
+  });
+}
+
+const createCard = async (user, token) => {
+  console.log(token)
+  stripe.customers.createSource(
+    user.stripe_customer,
+    {
+      source: token.id,
     }
   );
 }
@@ -61,6 +68,8 @@ const createPayment = async (req, res) => {
       req.body && req.body.stripe_token
       ? req.body.stripe_token
       : 'Error!';
+    
+      console.log(stripe_token);
 
     const { user, cart } = req.body;
 
@@ -73,8 +82,9 @@ const createPayment = async (req, res) => {
 
     try {
       const plan = await createPlan(cart, user_data);
-      const subscription = await createSubscription(plan, cart, user_data);
-
+      const card = await createCard(user_data, stripe_token);
+      const subscription = await createSubscription(plan, user_data);
+      
       res.json(subscription);
 
       } catch (err) {
