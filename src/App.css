@@ -17,3 +17,12 @@ img {
     --orange: #FF8762;
     --light-orange: rgba(255, 135, 98, 0.15);
 }
+
+/*  Stripe Styles */
+
+.StripeElement {
+    padding: .75rem .5rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    margin-bottom: .5rem;
+}

@@ -30,6 +30,7 @@ const createProfile = async (userRecord) => {
     .catch(console.error);
 };
 
+// Create plan for user
 const createPlan = async (cart, user) => {
   return await stripe.plans.create({
     amount: cart.price * 100,
@@ -41,6 +42,7 @@ const createPlan = async (cart, user) => {
   });
 }
 
+// Create subscription for user 
 const createSubscription = async (plan, user) => {
   return await stripe.subscriptions.create({
     customer: user.stripe_customer,
@@ -52,8 +54,8 @@ const createSubscription = async (plan, user) => {
   });
 }
 
+// Initialize a card for the user
 const createCard = async (user, token) => {
-  console.log(token)
   stripe.customers.createSource(
     user.stripe_customer,
     {
@@ -62,6 +64,7 @@ const createCard = async (user, token) => {
   );
 }
 
+// Begin the creation of the checkout process
 const createPayment = async (req, res) => {
   return cors(req, res, async () => {
     const stripe_token = 
@@ -69,26 +72,47 @@ const createPayment = async (req, res) => {
       ? req.body.stripe_token
       : 'Error!';
     
-      console.log(stripe_token);
-
+    // Get user, cart from request
     const { user, cart } = req.body;
 
+    // Fetch user from DB
     const user_record = await db.collection('users').doc(user.id).get();
     
     // Dirty check to see if user exists
-    if(!user_record) return res.send("No User!!1").end();
+    if(!user_record.exists) return res.send("No User!!1").end();
     
+    //Get user from firebase if it exists
     const user_data =  user_record.data();
 
     try {
+      //Create plan with price and user
       const plan = await createPlan(cart, user_data);
-      const card = await createCard(user_data, stripe_token);
-      const subscription = await createSubscription(plan, user_data);
       
-      res.json(subscription);
+      // Save card to user NOTE:ADD Check for existing cards
+      const card = await createCard(user_data, stripe_token);
+    
+      //Create subscription with plan and user
+      const subscription = await createSubscription(plan, user_data);
+      // console.log(subscription)
+      if(subscription.id) {
+        // Modify Firebase user record
+        const dbmod = await db.collection('users').doc(user_data.uid).set({
+          subscription: {
+            subscription_id: subscription.id,
+            shop_id: cart.items.shop_id,
+            cost: cart.items.price 
+          }
+        }).catch(console.error);
+
+        console.log(dbmod)
+
+        return res.json({response: "success"});
+      }
+
+      else return res.json({response: "error"});
 
       } catch (err) {
-        res.send(err).end();
+        return res.send(err).end();
       }
     });
 }

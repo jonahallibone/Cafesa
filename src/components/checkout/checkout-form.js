@@ -9,18 +9,35 @@ const CheckoutForm = ({auth, cartData, stripe}) => {
     
     const createToken = async (data) => {
         let { token } = await stripe.createToken(data);
+        return token;
     }
 
     const createCharge = async () => {
-        const req = await fetch('https://us-central1-cafesa-77e07.cloudfunctions.net/createPayment', {
-            method: "POST",
-            headers: {"Content-Type": "application/json"},
-            body: JSON.stringify({
-                stripe_token: await createToken({name: auth.user.name}),
-                user: auth.user,
-                cart: cartData.items
-            })
-        });
+        const token = await createToken({name: auth.user.name});
+        
+        // Dirty check for token; continue if found
+        console.log(token);
+        if(token === undefined) return; 
+
+        try {
+                const req = await fetch('http://localhost:5000/cafesa-77e07/us-central1/createPayment', {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({
+                    stripe_token: token,
+                    user: auth.user,
+                    cart: cartData.items
+                })
+            });
+
+            if (req.ok) {
+
+            }
+        }
+
+        catch {
+
+        }
     }
 
     return (
