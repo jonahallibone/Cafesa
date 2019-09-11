@@ -1,0 +1,22 @@
+.profile_page {
+    padding-top: 100px;
+    background: #f1f2f6;
+    min-height: calc(100vh);
+}
+.profile__sidebar {
+    padding: 2rem;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.profile__picture_frame {
+    height: 70px;
+    width: 70px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.profile__picture_frame img {
+
+}
