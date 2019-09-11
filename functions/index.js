@@ -108,13 +108,20 @@ const createPayment = async (req, res) => {
             subscription: {
               subscription_id: subscription.id,
               shop_id: cart.shop_id,
-              cost: cart.price 
+              cost: cart.price
             }
           }).catch(console.error);
         }
 
         //Subscription was a sucess
-        return res.json({response: "success"});
+        return res.json({
+          response: "success",
+          data: {
+            sub_id: subscription.id,
+            shop_id: cart.shop_id,
+            price: cart.price
+          }
+        });
       }
 
       //Something went wrong

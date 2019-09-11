@@ -40,7 +40,7 @@ const PriceSwap = ({cart, shop}) => {
         if(shopData.tiers) {
             return shopData.tiers.map((tier, index) => {
                 return <Price selectedTier={selectedTier} onClick={() => _handleClick(tier)} price={tier.price} key={index} description={tier.description} title={tier.title} />
-            })
+            });
         }
     }
 

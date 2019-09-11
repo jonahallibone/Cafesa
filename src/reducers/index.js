@@ -42,6 +42,14 @@ export const userReducer = createReducer(initialState, {
             fetching: false,
             subscription: payload.subscription
         }
+    },
+    SET_SUBSCRIPTION_DETAILS: (state, { payload }) => {
+        console.log(payload)
+
+        return {
+            ...state,
+            subscription: payload
+        }
     }
 });
 
