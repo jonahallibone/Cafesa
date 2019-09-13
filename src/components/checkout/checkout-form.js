@@ -1,3 +1,5 @@
+// @flow
+
 import React, { useEffect, useState } from "react";
 import {CardElement, injectStripe} from 'react-stripe-elements';
 import Button from "../button/button";

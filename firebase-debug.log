@@ -1,0 +1,33 @@
+[debug] [2019-09-12T16:20:09.942Z] ----------------------------------------------------------------------
+[debug] [2019-09-12T16:20:09.944Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only functions
+[debug] [2019-09-12T16:20:09.944Z] CLI Version:   7.3.1
+[debug] [2019-09-12T16:20:09.945Z] Platform:      darwin
+[debug] [2019-09-12T16:20:09.945Z] Node Version:  v10.15.0
+[debug] [2019-09-12T16:20:10.005Z] Time:          Thu Sep 12 2019 12:20:09 GMT-0400 (Eastern Daylight Time)
+[debug] [2019-09-12T16:20:10.005Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-12T16:20:10.068Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-12T16:20:10.068Z] > authorizing via signed-in user
+[debug] [2019-09-12T16:20:10.068Z] [iam] checking project cafesa-77e07 for permissions ["firebase.projects.get"]
+[debug] [2019-09-12T16:20:10.069Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-09-12T16:20:10.070Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-09-12T16:20:10.561Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-12T16:20:10.696Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cafesa-77e07:testIamPermissions  
+
+[debug] [2019-09-12T16:20:11.301Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-12T16:20:11.302Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cafesa-77e07  
+ 
+[debug] [2019-09-12T16:20:11.760Z] <<< HTTP RESPONSE 200
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/jonahallibone/Desktop/Cafesa/functions" for Cloud Functions...
+[debug] [2019-09-12T16:20:13.804Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/jonahallibone/Desktop/Cafesa/functions","node_version":"10.15.0"}
+[debug] [2019-09-12T16:20:13.804Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T16:20:13.854Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T16:20:13.902Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/jonahallibone/Desktop/Cafesa/functions/local_keys.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2019-09-12T16:20:13.903Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/jonahallibone/Desktop/Cafesa/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T16:20:18.276Z] Unsupported trigger: {"eventTrigger":{"resource":"projects/cafesa-77e07","eventType":"providers/firebase.auth/eventTypes/user.create","service":"firebaseauth.googleapis.com"},"name":"authOnCreate","entryPoint":"authOnCreate"}
+[info] ✔  functions[createPayment]: http function initialized (http://localhost:5000/cafesa-77e07/us-central1/createPayment).
+[info] i  functions[authOnCreate]: function ignored because the firebaseauth.googleapis.com emulator does not exist or is not running.
